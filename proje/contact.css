@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF2FA; 
+    color: #4A004A; 
+}
+
+
+header {
+    background-color: #AB47BC; 
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 1px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: #AB47BC;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 5px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #F48FB1; 
+    text-decoration: underline;
+}
+
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.contact-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-section h2 {
+    font-size: 2.5em;
+    color: #AB47BC;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.form-container:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); 
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border: 2px solid #AB47BC; 
+    background-color: #F8F1F9; 
+}
+
+form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #AB47BC;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover {
+    background-color: #9C27B0; 
+    transform: scale(1.05); 
+}
+
+
+.social-media {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.social-media a {
+    margin: 0 15px;
+    font-size: 2em;
+    color: #4A004A; 
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #F48FB1; 
+    transform: scale(1.1);
+}
+
+/* Mobil uyumluluk */
+@media (max-width: 768px) {
+    .contact-section h2 {
+        font-size: 2em;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 1em;
+    }
+
+    .social-media a {
+        font-size: 1.6em;
+    }
+}
+.comments-section {
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment-form .form-group {
+    margin-bottom: 15px;
+}
+
+.comment-list .comment {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment-list .comment p {
+    font-size: 1em;
+    color: #333;
+}
+
+.comment-list .comment strong {
+    color: #AB47BC; 
+}
+
+.comment-form button {
+    background-color: #AB47BC;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment-form button:hover {
+    background-color: #9C27B0;
+}
